@@ -1,8 +1,0 @@
-{
-  "error-no-email-message" : "Please enter your email.",
-  "error-invalid-email-message" : "Please enter a valid email address.",
-  "error-incorrect-email-message" : "A user could not be found with this email address.",
-  "error-no-password-message": "Please enter your password",
-  "error-short-password-message": "Please enter atleast 8 characters",
-  "An account is already registered with your email address. Please login"
-}
