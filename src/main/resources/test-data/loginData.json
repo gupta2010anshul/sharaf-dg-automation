@@ -1,0 +1,40 @@
+{
+  "loginLogoutValidCredentials": [
+    {
+      "emailId" :  "gupta2010anshul@gmail.com",
+      "password":  "gupta2010anshul"
+    }
+  ],
+  "loginWithInvalidEmail": [
+    {
+      "emailId": "gupta2010anshul"
+    }
+  ],
+  "loginWithNoPassword": [
+    {
+      "emailId": "gupta2010anshul@gmail.com"
+    }
+  ],
+  "loginWithShortPassword": [
+    {
+      "emailId": "gupta2010anshul@gmail.com",
+      "password": "abc"
+    }
+  ],
+  "loginWithInvalidPassword": [
+    {
+      "emailId": "gupta2010anshul@gmail.com",
+      "password": "abcd1234"
+    }
+  ],
+  "verifyConfirmEmailPage": [
+    {
+      "emailId": "gupta2010anshul@gmail.com"
+    }
+  ],
+  "verifyAccountNotFound": [
+    {
+      "emailId": "anshul2010gupta@gmail.com"
+    }
+  ]
+}

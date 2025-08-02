@@ -1,0 +1,113 @@
+{
+  "invalidInputData": [
+    {
+      "testScenario": "provide invalid emailId in invalid format",
+      "emailId" :  "test-email-invalid-format",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='reg_email-error']",
+      "errorMsg": "Please enter a valid email address"
+    },
+    {
+      "testScenario": "provide invalid emailId in valid format",
+      "emailId" :  "abc12@xy.xx",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='reg_email-error']",
+      "errorMsg": "Please enter a valid email address"
+    },
+    {
+      "testScenario": "provide empty password",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='reg_password-error']",
+      "errorMsg": "Please enter your password"
+    },
+    {
+      "testScenario": "provide short password",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "a",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='reg_password-error']",
+      "errorMsg": "Please enter a strong password (atleast 8 characters)"
+    },
+    {
+      "testScenario": "provide empty first name",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='first_name-error']",
+      "errorMsg": "Please enter a first name"
+    },{
+      "testScenario": "provide short first name",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "f",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='first_name-error']",
+      "errorMsg": "Your first name must consist of at least 2 characters"
+    },
+    {
+      "testScenario": "provide empty last name",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='last_name-error']",
+      "errorMsg": "Please enter a last name"
+    },
+    {
+      "testScenario": "provide short last name",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "l",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='last_name-error']",
+      "errorMsg": "Your last name must consist of at least 2 characters"
+    },
+    {
+      "testScenario": "provide invalid mobile number",
+      "emailId" :  "anshul2010gupta@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "411111111",
+      "xpath": "//span[@id='account_mobile_no-error']",
+      "errorMsg": "Please enter a valid mobile number"
+    }
+  ],
+  "registerWithoutTnc": [
+    {
+      "emailId" :  "abc@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111",
+      "xpath": "//span[@id='terms-error']",
+      "errorMsg": "You must accept our Terms & Conditions."
+    }
+  ],
+  "submitValidRegistrationForm" : [
+    {
+      "emailId" :  "abc12@gmail.com",
+      "password" :  "abcd1234",
+      "firstName" :  "fn",
+      "lastName" :  "ln",
+      "mobileNumber" :  "511111111"
+    }
+  ]
+}
