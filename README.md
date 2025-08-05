@@ -82,7 +82,7 @@ cd sharaf-dg-automation
 
 ### 2. Install dependencies
 ```bash
-mvn clean install
+mvn clean install -DskipTests
 ```
 
 ### 3. Run the tests using Maven Surefire and TestNG parameters
